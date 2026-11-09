@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bài tập 9 - Font Awesome</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 24px;
+        background: linear-gradient(145deg, #fff8f1, #f3e7df);
+        color: #352b29;
+      }
+      body > p:first-child a {
+        color: #a64f55;
+        text-decoration: none;
+      }
+      body > p:first-child a:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        text-align: center;
+        color: #713e3e;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+      }
+      ul.menu {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      ul.menu li {
+        display: inline-block;
+        margin: 6px;
+        background: #784b43;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px #653c3022;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+      ul.menu a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 20px;
+      }
+      ul.menu a:hover {
+        background: #b65c62;
+        border-radius: 8px;
+      }
+      ul.menu li:hover {
+        transform: translateY(-2px);
+        background: #b65c62;
+      }
+      ul.menu i {
+        margin-right: 8px;
+      }
+      .cards {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        background: #fffdfb;
+        border: 1px solid #efd9cb;
+        border-radius: 14px;
+        padding: 20px;
+        width: 150px;
+        text-align: center;
+        box-shadow: 0 6px 16px #653c3012;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 22px #653c3020;
+      }
+      .card i {
+        font-size: 40px;
+        color: #b65c62;
+        margin-bottom: 10px;
+      }
+      .card:hover i {
+        color: #c58a43;
+      }
+      .social a {
+        font-size: 32px;
+        margin: 0 10px;
+        color: #784b43;
+        transition: color 0.2s;
+      }
+      .social a:hover {
+        color: #b65c62;
+      }
+      @media (max-width: 500px) {
+        body {
+          padding: 18px 14px;
+        }
+        ul.menu li {
+          margin: 4px;
+        }
+        ul.menu a {
+          padding: 11px 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a href="index.html"
+        ><i class="fa-solid fa-arrow-left"></i> Về trang chủ</a
+      >
+    </p>
+    <h1>
+      <i class="fa-solid fa-graduation-cap"></i> Font Awesome – Khoa CNTTKD
+    </h1>
+    <ul class="menu">
+      <li>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i>TMDT</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-gears"></i>ERP</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-database"></i>MIS</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-chart-line"></i>DS</a>
+      </li>
+    </ul>
+    <div class="cards">
+      <div class="card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <p>Lập trình Web</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-palette"></i>
+        <p>CSS</p>
+      </div>
+      <div class="card">
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+    </div>
+    <p class="social" style="text-align: center; margin-top: 30px">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </p>
+  </body>
+</html>

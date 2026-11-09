@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tuần 3 - Về nhà - CSS cơ bản</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(145deg, #fff8f1 0%, #f8eee5 52%, #f2e3dc 100%);
+        color: #352b29;
+      }
+      .wrap { max-width: 900px; margin: 0 auto; padding: 40px 24px 56px; }
+      .profile {
+        position: relative;
+        overflow: hidden;
+        padding: 38px 28px 30px;
+        border: 1px solid #f1d9cb;
+        border-radius: 24px;
+        background: #fff;
+        text-align: center;
+        box-shadow: 0 18px 50px #653c3020;
+      }
+      .profile::before, .profile::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        background: #f6e5d6;
+      }
+      .profile::before { top: -125px; left: -90px; }
+      .profile::after { right: -120px; bottom: -145px; background: #f6e3e3; }
+      .profile > * { position: relative; z-index: 1; }
+      .avatar {
+        width: 166px;
+        height: 166px;
+        border: 5px solid #fff;
+        border-radius: 50%;
+        outline: 3px solid #bf6d72;
+        background: #e8d2c2;
+        object-fit: cover;
+        box-shadow: 0 8px 22px #4e302b30;
+      }
+      .profile h1 {
+        margin: 20px 0 8px;
+        color: #713e3e;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        font-size: clamp(30px, 5vw, 40px);
+      }
+      .profile p { line-height: 1.8; }
+      .profile p:nth-of-type(2) { color: #7a5145; }
+      .profile p i { color: #b65c62; }
+      .social a {
+        display: inline-flex;
+        width: 46px;
+        height: 46px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 6px;
+        border: 1px solid #ead3c5;
+        border-radius: 50%;
+        background: #fff8f1;
+        color: #784b43;
+        font-size: 22px;
+        text-decoration: none;
+        transition: transform .2s, color .2s, background .2s;
+      }
+      .social a:hover { color: #fff; background: #b65c62; transform: translateY(-3px); }
+      .wrap > h2 {
+        margin: 38px 0 16px;
+        color: #713e3e;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+      }
+      ol {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      ol li {
+        min-height: 66px;
+        padding: 16px 18px;
+        border: 1px solid #efd9cb;
+        border-radius: 14px;
+        background: #fffdfb;
+        box-shadow: 0 4px 12px #653c300c;
+        line-height: 1.55;
+        transition: transform .2s, box-shadow .2s, border-color .2s;
+      }
+      ol li:hover { transform: translateY(-2px); border-color: #d7a27e; box-shadow: 0 8px 20px #653c3018; }
+      ol a { color: #a64f55; font-weight: 700; text-decoration: none; }
+      ol a:hover { color: #754234; text-decoration: underline; }
+      @media (max-width: 600px) {
+        .wrap { padding: 22px 15px 36px; }
+        .profile { padding: 30px 18px 22px; }
+        ol { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="profile">
+        <img class="avatar" src="img/anhdaidien.jpg" alt="Ảnh đại diện" />
+        <h1>Trần Quang Khải</h1>
+        <p>
+          MSSV: 31241027671 <br />
+          Trường Đại học Kinh tế TP.HCM (UEH)<br />
+          Môn: Phát triển ứng dụng WEB/TMĐT
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          khaitran.31241027671@st.ueh.edu.vn
+        </p>
+        <p class="social">
+          <a href="https://www.facebook.com/tkhai.1212" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/subom125/ecommerce-ui-improvement" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/kh%E1%BA%A3i-tr%E1%BA%A7n-quang-a3151544a/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </p>
+      </section>
+
+      <h2>Danh sách bài tập – Tuần 3</h2>
+      <ol>
+        <li>
+          <a href="BaiTap1.html">Bài tập 1</a> – Minh chứng 2 game CSS Diner
+          &amp; CSS Speedrun
+        </li>
+        <li><a href="BaiTap2.html">Bài tập 2</a> – Định dạng đoạn văn (a–e)</li>
+        <li>Bài tập 3 – chọn phương án 3b: hoàn thành bài 4, 5, 6, 7</li>
+        <li>
+          <a href="BaiTap4.html">Bài tập 4</a> – Menu ngang (inline-block)
+        </li>
+        <li>
+          <a href="BaiTap5.html">Bài tập 5</a> – Best Shared Hosting Company
+        </li>
+        <li><a href="BaiTap6.html">Bài tập 6</a> – My Portfolio</li>
+        <li>
+          <a href="BaiTap7.html">Bài tập 7</a> – Layout
+          wrapper/header/nav/main/footer
+        </li>
+        <li>
+          <a href="BaiTap8a.html">Bài tập 8a</a> – Heroes of JavaScript and HTML
+        </li>
+        <li><a href="BaiTap8b.html">Bài tập 8b</a> – The Bat family (hover)</li>
+        <li><a href="BaiTap9.html">Bài tập 9</a> – Font Awesome</li>
+      </ol>
+    </div>
+  </body>
+</html>

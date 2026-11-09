@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bài tập 2 - Định dạng đoạn văn</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: linear-gradient(145deg, #fff8f1, #f3e7df);
+        color: #352b29;
+      }
+      .content {
+        max-width: 900px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      .content > p a {
+        display: inline-block;
+        padding: 9px 14px;
+        border-radius: 999px;
+        background: #784b43;
+        color: #fff;
+        text-decoration: none;
+      }
+      .content > p a:hover {
+        background: #b65c62;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        color: #713e3e;
+        border-bottom: 2px solid #e6c6b3;
+        padding-bottom: 12px;
+      }
+      h3 {
+        margin-top: 30px;
+        padding: 12px 15px;
+        border-left: 4px solid #b65c62;
+        border-radius: 0 10px 10px 0;
+        background: #f8e9df;
+        color: #713e3e;
+      }
+      /* a */
+      .ueh {
+        color: blue;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 30px;
+      }
+      /* b */
+      .cntt {
+        color: red;
+        text-align: right;
+        font-style: italic;
+        border: 3px dotted yellow;
+        border-radius: 12px;
+        background-color: gray;
+        font-size: 15px;
+        padding: 10px;
+      }
+      /*C*/
+      #demotext {
+        text-shadow:
+          2px 0 0px #800040,
+          3px 2px 0px rgba(77, 0, 38, 0.5),
+          3px 0 3px #ff002b,
+          5px 0 3px #800015,
+          6px 2px 3px rgba(77, 0, 13, 0.5),
+          6px 0 9px #ff5500,
+          8px 0 9px #802a00,
+          9px 2px 9px rgba(77, 25, 0, 0.5),
+          9px 0 18px #ffd500,
+          11px 0 18px #806a00,
+          12px 2px 18px rgba(77, 66, 0, 0.5),
+          12px 0 30px #d4ff00,
+          14px 0 30px #6a8000,
+          15px 2px 30px rgba(64, 77, 0, 0.5),
+          15px 0 45px #80ff00,
+          17px 0 45px #408000,
+          17px 2px 45px rgba(38, 77, 0, 0.5),
+          2px 3px 20px rgba(206, 89, 55, 0.85);
+        color: #a7dd3c;
+        background: #ffffff;
+      }
+      /* d */
+      .repeat-frame {
+        width: 100%;
+        min-height: 250px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 2px solid #b65c62;
+        border-radius: 12px;
+        background-color: #fff;
+        background-image: url("img/bitlogo.png");
+        background-size: 30px auto;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: left top;
+      }
+      .repeat-frame span {
+        max-width: 100%;
+        padding: 12px 18px;
+        border: 1px solid #ead3c5;
+        border-radius: 8px;
+        background: #fff8f1;
+        color: #352b29;
+        text-align: center;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+      }
+      /* e */
+      .e {
+        width: 100px;
+        height: 50px;
+        border: 2px solid #9a6659;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background: #fffaf6;
+      }
+      .e1 {
+        overflow: hidden;
+      }
+      .e2 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .e3 {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="content">
+      <p><a href="index.html">← Về trang chủ</a></p>
+      <h1>Bài tập 2</h1>
+
+      <h3>2a. Đại học UEH</h3>
+      <p class="ueh">Đại học UEH</p>
+
+      <h3>2b. Khoa CNTTKD</h3>
+      <p class="cntt">Khoa CNTTKD</p>
+
+      <h3>2c. BIT-UEH</h3>
+      <div id="demotext">BIT-UEH</div>
+
+      <h3>2d · REPEAT / FIXED</h3>
+      <div class="repeat-frame">
+        <span
+          >Logo BIT 30px · background-repeat: repeat<br />background-attachment:
+          fixed</span
+        >
+      </div>
+
+      <h3>2e. Đoạn văn Nhu cầu xã hội</h3>
+      <p>
+        <b>i.</b> Rộng 100px; cao 50px; ẩn nội dung khi bị tràn (overflow:
+        hidden)
+      </p>
+      <div class="e e1">
+        Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay
+        đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn
+        cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam
+        đã trở nên sôi động hơn khi có nhiều
+      </div>
+      <p>
+        <b>ii.</b> Cắt nội dung bị tràn với chữ ... (text-overflow: ellipsis)
+      </p>
+      <div class="e e2">
+        Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay
+        đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn
+        cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam
+        đã trở nên sôi động hơn khi có nhiều
+      </div>
+      <p>
+        <b>iii.</b> white-space: nowrap (không xuống dòng, nội dung tràn ra
+        ngoài khung)
+      </p>
+      <div class="e e3">
+        Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay
+        đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn
+        cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam
+        đã trở nên sôi động hơn khi có nhiều
+      </div>
+      <div style="height: 300px"></div>
+    </main>
+  </body>
+</html>

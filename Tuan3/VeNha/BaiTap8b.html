@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bài tập 8b - The Bat family</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Times New Roman", serif;
+        background: #fff8f1;
+        color: #352b29;
+      }
+      body > p a {
+        color: #a64f55;
+        font-weight: bold;
+      }
+      #container {
+        width: min(1024px, 100%);
+        margin: 0 auto;
+        padding: 0 12px;
+      }
+      .site-header {
+        text-align: center;
+        margin: 20px 0 30px;
+        padding: 15px 0;
+        background: linear-gradient(120deg, #784b43, #b65c62, #d18b62);
+        color: #fff8f1;
+        border-radius: 16px;
+        text-shadow: 2px 2px 3px #4e302b;
+      }
+      .site-header h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+      .site-header h1:before {
+        content: "🦇 ";
+        text-shadow: none;
+        color: #000;
+      }
+      .superheroes {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 70px;
+        height: 300px;
+      }
+      .superheroes li {
+        width: 174px;
+        height: 174px;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        margin-right: -1px;
+        transition:
+          width 0.4s,
+          height 0.4s;
+      }
+      .superheroes .img {
+        display: block;
+        width: 100%;
+        height: 174px;
+        border: 2px solid #fff;
+        border-radius: 14px;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+      .superheroes a {
+        display: block;
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.35);
+        padding: 6px 0;
+        border-radius: 14px 14px 0 0;
+      }
+      .superheroes .more {
+        display: none;
+        position: absolute;
+        bottom: -26px;
+        left: 0;
+        width: 100%;
+        background: #784b43;
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        padding: 5px 0;
+        text-decoration: underline;
+        border-radius: 0 0 8px 8px;
+      }
+      .superheroes li:hover {
+        width: 210px;
+        z-index: 2;
+      }
+      .superheroes li:hover .more {
+        display: block;
+      }
+      @media (max-width: 900px) {
+        .superheroes {
+          height: auto;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 12px;
+        }
+        .superheroes li {
+          margin: 0;
+        }
+      }
+      @media (max-width: 400px) {
+        .superheroes li,
+        .superheroes li:hover {
+          width: 170px;
+        }
+        .superheroes .img {
+          height: 170px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header class="site-header"><h1>The Bat family</h1></header>
+      <ul class="superheroes">
+        <li>
+          <img class="img" src="img/batman.jpg" alt="Batman" /><a href="#"
+            >Batman</a
+          ><span class="more">Read more</span>
+        </li>
+        <li>
+          <img class="img" src="img/batwing.jpg" alt="Batwing" /><a href="#"
+            >Batwing</a
+          ><span class="more">Read more</span>
+        </li>
+        <li>
+          <img class="img" src="img/batgirl.jpg" alt="Batgirl" /><a href="#"
+            >Batgirl</a
+          ><span class="more">Read more</span>
+        </li>
+        <li>
+          <img class="img" src="img/nightwing.jpg" alt="Nightwing" /><a href="#"
+            >Nightwing</a
+          ><span class="more">Read more</span>
+        </li>
+        <li>
+          <img class="img" src="img/redrobin.jpg" alt="Red Robin" /><a href="#"
+            >Red Robin</a
+          ><span class="more">Read more</span>
+        </li>
+      </ul>
+    </div>
+    <p style="text-align: center">
+      <a href="index.html">← Về trang chủ</a> (di chuột lên từng hero để xem
+      hover)
+    </p>
+  </body>
+</html>
