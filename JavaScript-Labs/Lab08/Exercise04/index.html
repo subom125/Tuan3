@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Exercise 8.4 - Using noscript</title>
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <style>
+      body {
+        font:
+          16px Arial,
+          sans-serif;
+        margin: 0;
+        color: #23314a;
+      }
+      main {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+      button {
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+      .movingDiv {
+        display: inline-block;
+        border: 1px solid #666;
+        margin: 8px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="lab-nav">
+      <a href="../index.html">← Lab 08</a
+      ><a href="../../index.html">Trang chủ</a
+      ><span>Exercise 8.4: Using noscript</span>
+    </nav>
+    <main>
+      <h1>Exercise 8.4: Using noscript</h1>
+      <p>Dòng chữ dưới đây chỉ xuất hiện khi JavaScript bị tắt.</p>
+      <noscript
+        ><p class="lab-note">
+          This text only shown if JS is turned off
+        </p></noscript
+      >
+      <p id="jsMessage">JavaScript đang bật nên phần noscript bị ẩn.</p>
+    </main>
+  </body>
+</html>
