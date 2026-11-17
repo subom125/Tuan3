@@ -4,7 +4,7 @@
 - **MSSV:** 31241027671
 - **LHP:** 26C1INF50902701
 - **Mục tiêu:** Hoàn thành 29 Exercise trong 3 bài thực hành JavaScript, DOM và jQuery.
-- **Repository:** https://github.com/YOUR_GITHUB_USERNAME/YOUR_EXISTING_REPOSITORY (thay lại)
+- **Repository:** https://github.com/subom125
 - **GitHub Pages:** (https://subom125.github.io/Tuan3/JavaScript-Labs/)
 
 ## Cấu trúc
