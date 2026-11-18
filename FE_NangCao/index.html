@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi học hôm nay - Thiết kế Responsive</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #172033;
+        background: #f3f6fb;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(760px, calc(100% - 32px));
+        margin: 64px auto;
+        padding: 40px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 12px 36px rgb(23 32 51 / 10%);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: #2563eb;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2rem, 5vw, 3rem);
+        line-height: 1.15;
+      }
+
+      h2 {
+        margin: 28px 0 8px;
+        font-size: 1.2rem;
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      .lesson-link {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 12px 20px;
+        border-radius: 8px;
+        color: #fff;
+        background: #2563eb;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .lesson-link:hover,
+      .lesson-link:focus-visible {
+        background: #1d4ed8;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          margin: 24px auto;
+          padding: 28px 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Buổi học hôm nay</p>
+      <h1>Thiết kế giao diện Responsive</h1>
+      <p>
+        Hôm nay chúng ta tìm hiểu cách xây dựng trang web có thể thích ứng với
+        nhiều kích thước màn hình và các ngữ cảnh hiển thị khác nhau.
+      </p>
+
+      <h2>Nội dung chính</h2>
+      <ul>
+        <li>
+          Sử dụng media query để thay đổi bố cục theo chiều rộng màn hình.
+        </li>
+        <li>Tạo bố cục hai cột và chuyển thành một cột trên thiết bị nhỏ.</li>
+        <li>
+          Chọn hình ảnh phù hợp với thiết bị bằng thẻ
+          <code>&lt;picture&gt;</code>.
+        </li>
+        <li>
+          Điều chỉnh nội dung khi in trang bằng media query cho chế độ print.
+        </li>
+      </ul>
+
+      <a class="lesson-link" href="Bai1.html">Xem bài thực hành 1</a>
+    </main>
+  </body>
+</html>
