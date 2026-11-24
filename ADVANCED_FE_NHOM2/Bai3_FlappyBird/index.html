@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Flappy Khải - Nhóm 2</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <a class="profile-link" href="../index.html">Về hồ sơ</a>
+      <h1>🐤 Flappy Khải</h1>
+      <p>
+        Nhấn <kbd>↓ Arrow Down</kbd> để bay. 5 / 20 / 40 điểm lên cấp; 50 điểm
+        chiến thắng!
+      </p>
+      <div class="game-frame">
+        <canvas
+          id="game"
+          width="400"
+          height="600"
+          aria-label="Game Flappy Bird"
+        ></canvas>
+        <div id="game-overlay">
+          <h2 id="overlay-title">Flappy Khải</h2>
+          <p id="overlay-text">Vượt qua các ống để tích lũy 50 điểm.</p>
+          <button id="start">Bắt đầu chơi</button>
+        </div>
+      </div>
+      <p>
+        <button id="restart">Chơi lại</button>
+        <button id="pause">Tạm dừng / Tiếp tục</button>
+        <label
+          ><input id="easy" type="checkbox" checked /> Chế độ dễ (khoảng trống
+          rộng)</label
+        >
+      </p>
+      <small
+        >Đồ họa chim và ống đã cá nhân hóa. Bản demo sử dụng jQuery, HTML5
+        Canvas và JavaScript.</small
+      >
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>

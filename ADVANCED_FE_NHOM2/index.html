@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trần Quang Khải | Giới thiệu bản thân</title>
+    <style>
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: clamp(1rem, 5vw, 4rem);
+        font: 1rem/1.5 Arial, sans-serif;
+        color: #f3f8f1;
+        background: radial-gradient(ellipse at top left, #2b5649, #102821 62%);
+      }
+
+      .profile {
+        display: grid;
+        grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
+        width: min(100%, 58rem);
+        overflow: hidden;
+        border: 1px solid #58766a;
+        border-radius: 1.5rem;
+        background: #19382f;
+        box-shadow: 0 1.5rem 4rem #071c17aa;
+      }
+
+      .portrait {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #25463b;
+      }
+
+      .details { padding: clamp(1.5rem, 5vw, 3.5rem); }
+
+      .school {
+        margin: 0 0 .5rem;
+        color: #fac88c;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.3rem, 5vw, 3.8rem);
+        line-height: 1.1;
+      }
+
+      dl {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: .55rem 1rem;
+        margin: 1.75rem 0;
+        padding-block: 1.25rem;
+        border-block: 1px solid #58766a;
+      }
+
+      dt { color: #c0d6cb; }
+      dd { margin: 0; font-weight: 600; }
+
+      nav { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.75rem;
+        padding: .65rem 1rem;
+        border: 1px solid #fac88c;
+        border-radius: .65rem;
+        background: #fac88c;
+        color: #193027;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .button + .button { background: transparent; color: #fac88c; }
+      .button:hover { background: #ffe0b6; color: #193027; }
+      .button:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+
+      @media (max-width: 44rem) {
+        .profile { grid-template-columns: 1fr; max-width: 33rem; }
+        .portrait { height: auto; aspect-ratio: 4 / 3; object-position: center 30%; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="profile">
+      <img class="portrait" src="./anhdaidien.jpg" alt="Ảnh chân dung Trần Quang Khải" />
+      <section class="details" aria-labelledby="name">
+        <p class="school">Sinh viên UEH</p>
+        <h1 id="name">Trần Quang Khải</h1>
+        <dl>
+          <dt>MSSV</dt>
+          <dd>31241027671</dd>
+          <dt>Lớp</dt>
+          <dd>EE0001</dd>
+          <dt>Môn học</dt>
+          <dd>Phát triển ứng dụng TMĐT</dd>
+        </dl>
+        <nav aria-label="Bài tập">
+          <a class="button" href="./Bai1_Ecommerce/index.html">Bài 1 · Ecommerce</a>
+          <a class="button" href="./Bai3_FlappyBird/index.html">Bài 3 · Flappy Bird</a>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>

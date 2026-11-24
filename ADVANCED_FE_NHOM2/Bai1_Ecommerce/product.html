@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WonderLab - Chi tiết sản phẩm</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/css/star-rating.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#menu"
+          >
+            <span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span></button
+          ><a class="navbar-brand" href="index.html">🧸 WonderLab</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Sản phẩm</a></li>
+            <li><a href="product.html?id=robot">Chi tiết mẫu</a></li>
+            <li><a href="status.html">Đơn hàng</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" action="index.html">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="search"
+                name="q"
+                placeholder="Tìm đồ chơi..."
+                aria-label="Tìm kiếm"
+              />
+            </div>
+            <button class="btn btn-primary">Tìm</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="status.html"
+                ><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ
+                hàng <span class="badge cart-count">0</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <p><a class="btn btn-default" href="../index.html">Về hồ sơ</a></p>
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>Danh mục</h3>
+          <div class="list-group">
+            <a class="list-group-item" href="index.html">Xem toàn bộ</a
+            ><a class="list-group-item" href="status.html">Đơn hàng của tôi</a>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="thumbnail-detail">
+            <div class="row">
+              <div class="col-sm-6">
+                <img
+                  id="zoom-main"
+                  class="xzoom"
+                  src="assets/robotthongminh.jpg"
+                  xoriginal="assets/robotthongminh.jpg"
+                  alt="Hình sản phẩm"
+                />
+                <div id="zoom-thumbs" class="xzoom-thumbs"></div>
+              </div>
+              <div class="col-sm-6">
+                <h2 id="detail-name"></h2>
+                <p id="detail-description"></p>
+                <div>
+                  <span id="detail-price" class="price"></span>
+                  <span id="detail-old" class="old-price"></span>
+                  <span class="label label-danger" id="detail-discount"></span>
+                </div>
+                <br /><input
+                  id="detail-rating"
+                  class="shop-rating"
+                  value="4.5"
+                  data-size="xs"
+                />
+                <h4>Trạng thái kho</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-success"
+                    id="stock-progress"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                    style="width: 0%"
+                  >
+                    0%
+                  </div>
+                </div>
+                <p id="stock-label"></p>
+                <label for="qty">Số lượng</label>
+                <div>
+                  <input
+                    type="number"
+                    id="qty"
+                    min="1"
+                    value="1"
+                    class="form-control quantity"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="color">Màu sắc</label>
+                  <select id="color" class="form-control">
+                    <option value="Nguyên bản">Nguyên bản</option>
+                    <option value="Xanh">Xanh</option>
+                    <option value="Hồng">Hồng</option>
+                  </select>
+                </div>
+                <div id="size-selector">
+                  <br /><label>Chọn kích thước</label>
+                  <div id="size-options">
+                    <button
+                      class="btn btn-default selected-size"
+                      type="button"
+                      data-size="S"
+                    >
+                      S
+                    </button>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                      data-size="M"
+                    >
+                      M
+                    </button>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                      data-size="L"
+                    >
+                      L
+                    </button>
+                  </div>
+                </div>
+                <br /><button class="btn btn-success" id="add-detail">
+                  <span class="glyphicon glyphicon-shopping-cart"></span> Thêm
+                  vào giỏ
+                </button>
+                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#seller-contact" aria-expanded="false" aria-controls="seller-contact">Liên hệ người bán</button>
+                <div id="seller-contact" class="collapse">
+                  <p>Hỗ trợ WonderLab: đây là cửa hàng mô phỏng. Sau khi đặt hàng, bạn có thể xem tin nhắn xác nhận trong <a href="status.html">lịch sử đơn hàng</a>.</p>
+                </div>
+                <div id="detail-message" class="help-block" role="status"></div>
+              </div>
+            </div>
+            <hr />
+            <h3>Đánh giá khách hàng</h3>
+            <div class="review">
+              <input class="shop-rating" value="5" data-size="xs" />
+              <p>Minh Anh: Đồ chơi đẹp, đóng gói cẩn thận.</p>
+            </div>
+            <div class="review">
+              <input class="shop-rating" value="4" data-size="xs" />
+              <p>Hoàng Nam: Sản phẩm phù hợp với mô tả.</p>
+            </div>
+            <div id="customer-reviews"></div>
+            <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#review-panel" aria-expanded="false" aria-controls="review-panel">Viết đánh giá</button>
+            <div id="review-panel" class="collapse">
+              <form id="review-form" class="well">
+                <div class="form-group">
+                  <label for="review-name">Tên</label>
+                  <input id="review-name" class="form-control" maxlength="60" required />
+                </div>
+                <div class="form-group">
+                  <label for="review-score">Số sao</label>
+                  <select id="review-score" class="form-control" required>
+                    <option value="5">5 sao</option>
+                    <option value="4">4 sao</option>
+                    <option value="3">3 sao</option>
+                    <option value="2">2 sao</option>
+                    <option value="1">1 sao</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="review-text">Nhận xét</label>
+                  <textarea id="review-text" class="form-control" maxlength="400" required></textarea>
+                </div>
+                <button class="btn btn-success" type="submit">Gửi đánh giá</button>
+                <p id="review-feedback" role="status"></p>
+              </form>
+            </div>
+            <h3>Sản phẩm liên quan</h3>
+            <div id="related-products" class="row"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      WonderLab | Bài thực hành Advanced Front-end - Nhóm 2
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/js/star-rating.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

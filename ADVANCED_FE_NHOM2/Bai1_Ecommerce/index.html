@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WonderLab - Trang chủ</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/css/star-rating.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#menu"
+          >
+            <span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span></button
+          ><a class="navbar-brand" href="index.html">🧸 WonderLab</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Sản phẩm</a></li>
+            <li><a href="product.html?id=robot">Chi tiết mẫu</a></li>
+            <li><a href="status.html">Đơn hàng</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" action="index.html">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="search"
+                name="q"
+                placeholder="Tìm đồ chơi..."
+                aria-label="Tìm kiếm"
+              />
+            </div>
+            <button class="btn btn-primary">Tìm</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="status.html"
+                ><span class="glyphicon glyphicon-shopping-cart"></span> Giỏ
+                hàng <span class="badge cart-count">0</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <p><a class="btn btn-default" href="../index.html">Về hồ sơ</a></p>
+      <div
+        id="shop-carousel"
+        class="carousel slide"
+        data-ride="carousel"
+        style="margin-bottom: 22px"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#shop-carousel"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#shop-carousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="hero">
+              <h1>Khám phá đồ chơi sáng tạo</h1>
+              <p>Robot STEM, đồ chơi giáo dục và thú bông đáng yêu.</p>
+              <a class="btn btn-default" href="#products">Mua sắm ngay</a>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="hero"
+              style="background: linear-gradient(120deg, #19a0b7, #f09d73)"
+            >
+              <h1>Ưu đãi đồ chơi cho bé</h1>
+              <p>Khám phá các sản phẩm NEW và BEST SELLER của WonderLab.</p>
+              <a class="btn btn-default" href="product.html?id=blocks"
+                >Xem bộ xếp hình</a
+              >
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#shop-carousel" data-slide="prev"
+          ><span class="glyphicon glyphicon-chevron-left"></span></a
+        ><a
+          class="right carousel-control"
+          href="#shop-carousel"
+          data-slide="next"
+          ><span class="glyphicon glyphicon-chevron-right"></span
+        ></a>
+      </div>
+      <div class="row">
+        <aside class="col-sm-3">
+          <h3>Danh mục</h3>
+          <div class="list-group">
+            <a href="index.html" class="list-group-item">Tất cả sản phẩm</a
+            ><a href="index.html?category=STEM" class="list-group-item">STEM</a
+            ><a href="index.html?category=Giao%20duc" class="list-group-item"
+              >Giáo dục</a
+            ><a href="index.html?category=Thu%20bong" class="list-group-item"
+              >Thú bông</a
+            >
+          </div>
+        </aside>
+        <section class="col-sm-9" id="products">
+          <h2>Sản phẩm nổi bật</h2>
+          <div class="row" id="product-list"></div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      WonderLab | Bài thực hành Advanced Front-end - Nhóm 2
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/js/star-rating.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fc;
+  color: #26344c;
+}
+.navbar {
+  border-radius: 0;
+}
+.navbar-brand {
+  font-weight: 800;
+  color: #5750c9 !important;
+}
+.hero {
+  background: linear-gradient(120deg, #6256c9, #1caeac);
+  padding: 44px 25px;
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 28px;
+}
+.product-card {
+  border: 1px solid #e9ecf3;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 25px;
+  min-height: 390px;
+  position: relative;
+  box-shadow: 0 5px 18px rgba(34, 51, 70, 0.08);
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #f8f9fd;
+}
+.product-card .caption {
+  padding: 15px;
+}
+.product-card h4 {
+  min-height: 45px;
+}
+.price {
+  color: #d84165;
+  font-size: 19px;
+  font-weight: bold;
+}
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+.ribbon {
+  position: absolute;
+  top: 12px;
+  padding: 5px 9px;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+}
+.discount {
+  left: 0;
+  background: #e84c69;
+  border-radius: 0 6px 6px 0;
+}
+.tag {
+  right: 0;
+  background: #2f9c9a;
+  border-radius: 6px 0 0 6px;
+}
+.rating-container {
+  font-size: 10px;
+}
+.thumbnail-detail {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+.xzoom {
+  max-width: 100%;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+.xzoom-thumbs {
+  margin-top: 10px;
+}
+.xzoom-gallery {
+  width: 73px;
+  height: 65px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+.progress {
+  height: 20px;
+  margin: 8px 0 20px;
+}
+.status-card {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  margin: 10px 0;
+}
+.status-card img {
+  max-height: 65px;
+}
+.footer {
+  text-align: center;
+  padding: 35px;
+  color: #657;
+}
+.quantity {
+  width: 80px;
+  display: inline-block;
+}
+.selected-size {
+  background: #6358c8 !important;
+  color: white !important;
+}
+.review {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+@media (max-width: 767px) {
+  .hero {
+    padding: 22px 15px;
+  }
+  .product-card {
+    min-height: 0;
+  }
+  .xzoom {
+    height: 240px;
+  }
+}
+#shop-carousel .hero {
+  margin-bottom: 0;
+  min-height: 230px;
+}
+#shop-carousel .carousel-control {
+  background: none;
+  width: 8%;
+}
+#shop-carousel .carousel-indicators {
+  bottom: 0;
+}
